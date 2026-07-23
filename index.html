@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil Kecamatan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <!-- GANTI nama kecamatan di bawah -->
+    <span class="brand">Kec. Nama Kecamatan</span>
+    <nav class="site-nav">
+      <a href="#profil">Profil</a>
+      <a href="#sejarah">Sejarah</a>
+      <a href="#wilayah">Peta</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<!-- GANTI url(...) di bawah dengan path foto gedung kecamatan, atau hapus baris style itu kalau belum ada foto -->
+<section class="hero" style="background-image: url('images/kecamatan.jpg');">
+  <div class="hero-inner">
+    <!-- GANTI foto Pak Camat di bawah, atau hapus baris <img> ini kalau belum ada foto -->
+    <img src="images/camat.jpg" alt="Foto Camat" class="foto-camat">
+
+    <p class="eyebrow">Profil Wilayah</p>
+    <h1 class="hero-title">Kecamatan Nama Kecamatan</h1>
+    <p class="hero-desc">Tulis tagline singkat kecamatan di sini.</p>
+  </div>
+</section>
+
+<!-- ================= INFO UMUM ================= -->
+<section id="profil" class="section">
+  <div class="section-inner">
+    <p class="eyebrow">Data Wilayah</p>
+    <h2 class="section-title">Kecamatan dalam Angka</h2>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <span class="stat-value">0</span>
+        <span class="stat-label">Jiwa Penduduk</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">0</span>
+        <span class="stat-label">Desa / Kelurahan</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">0</span>
+        <span class="stat-label">Km&sup2; Luas Wilayah</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">0</span>
+        <span class="stat-label">Jumlah Kepala Keluarga</span>
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Batas Wilayah</h3>
+        <ul>
+          <li>Utara — ...</li>
+          <li>Selatan — ...</li>
+          <li>Timur — ...</li>
+          <li>Barat — ...</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h3>Mata Pencaharian</h3>
+        <ul>
+          <li>Petani</li>
+          <li>Pedagang</li>
+          <li>Buruh</li>
+          <li>PNS/ASN</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEJARAH ================= -->
+<!-- Untuk menambah tahun baru: copy 1 blok <div class="timeline-item">...</div> dan tempel di bawahnya -->
+<section id="sejarah" class="section section-alt">
+  <div class="section-inner">
+    <p class="eyebrow">Perjalanan</p>
+    <h2 class="section-title">Jejak Sejarah</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-year">Tahun</span>
+        <p>Tulis peristiwa sejarahnya di sini.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PETA WILAYAH ================= -->
+<!-- Ganti src="..." di bawah dengan link dari Google Maps > Bagikan > Sematkan peta > Salin HTML -->
+<section id="wilayah" class="section">
+  <div class="section-inner">
+    <p class="eyebrow">Geografi</p>
+    <h2 class="section-title">Peta Wilayah</h2>
+    <div class="map-frame">
+      <iframe
+        src="https://www.google.com/maps?q=Indonesia&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER / KONTAK ================= -->
+<footer id="kontak" class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <span class="brand brand--light">Kec. Nama Kecamatan</span>
+      <p>Alamat kantor kecamatan di sini.</p>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <p>Telepon: ...<br>Email: ...</p>
+    </div>
+    <div>
+      <h4>Jam Layanan</h4>
+      <p>Senin–Jumat, 08.00–15.00 WIB</p>
+    </div>
+  </div>
+  <p class="footer-copy">&copy; 2026 Pemerintah Kecamatan Nama Kecamatan</p>
+</footer>
+
+</body>
+</html>
